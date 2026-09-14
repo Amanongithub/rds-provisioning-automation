@@ -1,3 +1,4 @@
+
 # RDS Provisioning Automation
 
 A **SRE/DevOps automation tool** for generating AWS RDS infrastructure using **Bash, Terraform, Git, and GitHub Pull Requests**.
@@ -92,6 +93,7 @@ Then:
 ```text
 Commit → Push → Pull Request → Human Review
 ```
+<img width="1193" height="590" alt="PR" src="https://github.com/user-attachments/assets/794e4920-abf8-476c-ab90-6acd69e53efb" />
 
 ## Project Structure
 
