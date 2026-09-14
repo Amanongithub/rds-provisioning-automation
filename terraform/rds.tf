@@ -136,3 +136,21 @@ resource "aws_db_instance" "amanprodtest5" {
     ManagedBy   = "Terraform"
   }
 }
+
+resource "aws_db_instance" "finaltest" {
+  identifier          = "finaltest"
+  engine              = "postgres"
+  engine_version      = "16"
+  instance_class      = "db.t3.micro"
+  allocated_storage   = 20
+  storage_type        = "gp3"
+  deletion_protection = false
+  skip_final_snapshot = true
+  publicly_accessible = false
+
+  tags = {
+    Name        = "finaltest"
+    Environment = "non-prod"
+    ManagedBy   = "Terraform"
+  }
+}
