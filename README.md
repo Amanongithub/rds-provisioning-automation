@@ -14,20 +14,18 @@ RDS Configuration
     ↓
 Production Safety Checks ( Delete protection )
     ↓
-Terraform Generation
-    ↓
 Terraform Validate
     ↓
-Git Branch
+Auto Git Branch
     ↓
-Commit & Push
+AUTO Commit & Push
     ↓
 GitHub Pull Request
 ```
 
 ## Features
 
-* **Simple provisioning** — enter RDS name and instance size.
+* **Simple and Interactive provisioning** — enter RDS name and instance size.
 * **Automatic environment detection** — names containing `prod` are treated as production.
 * **Production guardrail** — production RDS automatically gets:
 
@@ -74,7 +72,7 @@ RDS name: amanprodtest5
 Instance: db.t3.medium
 ```
 
-Automatically creates:
+Automatically creates :
 
 ```text
 rds/amanprodtest5
@@ -88,7 +86,7 @@ Deletion Protection: true
 Terraform Validation: PASSED
 ```
 
-Then:
+Then PR is created:
 
 ```text
 Commit → Push → Pull Request → Human Review
